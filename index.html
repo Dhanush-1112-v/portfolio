@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xYjXlIpLEbL3Y..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jbQ3OY7CK_dYtUifWhOcFb13bEPRIcy2kQ&s" alt="Me" class="profile-img" />
+
+
+  <h2>Vanjari Sai Dhanush</h2>
+  <p class="title">Web Developer</p>
+
+  <hr class="divider" />
+
+  <div class="contact-list">
+    <div class="contact-item">
+      <i class="fas fa-envelope icon"></i>
+      <div class="info">
+        <label>Email</label>
+        <p>jagarlapudidhanush@gmail.com</p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone icon"></i>
+      <div class="info">
+        <label>Phone</label>
+        <p>9705832366</p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-cake-candles icon"></i>
+      <div class="info">
+        <label>Birthday</label>
+        <p>June 3, 2007</p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-location-dot icon"></i>
+      <div class="info">
+        <label>Location</label>
+        <p>HYDERBAD, INDIA</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="socials">
+    <a href="https://www.facebook.com/vanjari.dhanush"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/sai-dhanush-vanjari-a49a83374/"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <nav class="top-nav">
+        <button data-tab="about">About</button>
+        <button data-tab="resume">Resume</button>
+        <button data-tab="portfolio">Portfolio</button>
+        <button data-tab="contact">Contact</button>
+        <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+
+      </nav>
+
+      <!-- Panels -->
+      <section id="about" class="tab-content active">
+        <h1>About Me</h1>
+        <p>I am <strong>Vanjari Sai Dhanush</strong>, an aspiring web developer with a deep passion for building impactful digital experiences.<br>
+With a strong foundation in web technologies, I aim to craft responsive, user-friendly applications that solve real-world problems.<br><br>
+
+Beyond web development, I am highly interested in <strong>Artificial Intelligence and Machine Learning (AI/ML)</strong>.<br>
+I enjoy exploring how intelligent systems can be leveraged to automate tasks, enhance user experiences, and contribute to innovative problem-solving in various domains.<br><br>
+
+I also have a solid grasp of <strong>Data Structures and Algorithms (DSA)</strong>, which allows me to write optimized, efficient code and approach problem-solving with a logical and structured mindset.<br>
+My technical journey is fueled by curiosity, continuous learning, and a drive to stay updated with the latest advancements in technology.<br><br>
+
+Whether it's developing full-stack applications, experimenting with machine learning models, or tackling algorithmic challenges, I’m always eager to push my boundaries and grow as a developer.<br>
+I'm currently exploring opportunities to work on collaborative projects that bridge the gap between web development and intelligent systems.
+</p>
+      </section>
+
+      <section id="resume" class="tab-content">
+        <h1>Resume</h1>
+        <iframe src="assets/dhanush_resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+      </section>
+
+     <section id="portfolio" class="tab-content active">
+  <h1>Portfolio</h1>
+  <div class="projects">
+
+    <!-- Portfolio Website -->
+    <div class="project-card">
+      <img src="assets/portfolio.png" alt="Portfolio Website" />
+      <h4>Portfolio Website</h4>
+      <p>A personal portfolio site built using HTML, CSS, and JavaScript. Includes dark mode, tab navigation, and responsive layout. Developed as an internship submission project.</p>
+    </div>
+
+    <!-- Searchflix App -->
+    <div class="project-card">
+      <img src="assets/serchflix.png" alt="Searchflix Movie App" />
+      <h4>Searchflix - Movie Search App</h4>
+      <p>A movie search application built using the OMDb API. Users can search for any movie and get details like poster, year, and plot. Created using HTML, CSS, and JavaScript.</p>
+    </div>
+
+   <div class="project-card">
+  <img src="assets/eventpulse.png" alt="EventPulse App" />
+  <h4>EventPulse - Event Management App</h4>
+  <p>An event management platform that helps users explore, register, and manage upcoming tech events. Built using HTML, CSS, and JavaScript.</p>
+</div>
+
+  </div>
+</section>
+
+      <section id="contact" class="tab-content">
+        <h1>Contact</h1>
+        <form action="https://formspree.io/f/xanbjqdr" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  
+  <!-- Optional: Subject line in your inbox -->
+  <input type="hidden" name="_subject" value="New Contact Message from Portfolio" />
+  
+  <!-- Optional: Redirect after submit -->
+  <input type="hidden" name="_next" value="thankyou.html" />
+  
+  <button type="submit">Send Message</button>
+</form>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
