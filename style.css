@@ -251,4 +251,52 @@ body.dark-mode form textarea {
   background: #eaeaea;
   color: #000;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+
+  input, textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
 
